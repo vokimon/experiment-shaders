@@ -60,7 +60,7 @@ EOF
 for shader in *frag
 do
     shader_title=$(cat "${shader}" | grep Title | sed 's/.*Title: \(.*\)$/\1/')
-    [ -z $shader_title ] && {
+    [ -z "$shader_title" ] && {
         warn "Missing title in shader $shader"
         shader_title="${shader/.frag/}"
     }
