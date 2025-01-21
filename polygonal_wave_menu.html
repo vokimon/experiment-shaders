@@ -6,21 +6,10 @@
     <title>Polygonal Wave Menu</title>
     <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
     <link rel="icon" type="image/x-icon" href="texture.png">
-    <style>
-        :root {
-          background-color: #010101;
-          color: #aae;
-        }
-        .glslCanvas {
-            position: fixed;
-            onset: 0 0 0 0; 
-        }
-        body { margin: 0; position: relative;}
-        canvas { display: block; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Polygonal Wave Menu</h1>
-<canvas class="glslCanvas" data-fragment-url="polygonal_wave_menu.frag" data-textures="texture.png" style="position: fixed; top: 0; width: 100%; height: 100vh"></canvas>
+<canvas data-fullscreen="1" class="glslCanvas" data-fragment-url="polygonal_wave_menu.frag" data-textures="texture.png"></canvas>
+<h1>Polygonal Wave Menu <a href="polygonal_wave_menu.frag">Code</a></h1>
 </body>
 </html>

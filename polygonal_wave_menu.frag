@@ -27,21 +27,6 @@ vec2 yrelative(in vec2 pos) {
   return st;
 }
 
-bool pol_hovered(in vec2 pos, in float R) {
-    return distance(yrelative(pos), yrelative(u_mouse.xy))>R;
-}
-
-float nagon_old(in int N, in float radius, in vec2 pos, in float angle) {
-  vec2 st = yrelative(gl_FragCoord.xy);
-  st += pos;
-  float a = atan(st.x,st.y)+PI;
-  float ro = TWO_PI/float(N);
-  // Shaping function that modulate the distance
-  float d = length(st) * cos(floor(.5 + a/ro)*ro -a);
-  return fract(radius*50.0 * d / float(N));
-  return 1.0-smoothstep(radius, radius*1.01, d);
-}
-
 float circle(in vec2 center) {
     vec2 st = yrelative(gl_FragCoord.xy);
     return distance(st, center);

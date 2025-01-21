@@ -16,22 +16,11 @@ FRAGMENT_PAGE=$(cat <<EOF
     <title>TITLE</title>
     <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
     <link rel="icon" type="image/x-icon" href="texture.png">
-    <style>
-        :root {
-          background-color: #010101;
-          color: #aae;
-        }
-        .glslCanvas {
-            position: fixed;
-            onset: 0 0 0 0; 
-        }
-        body { margin: 0; position: relative;}
-        canvas { display: block; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>TITLE</h1>
-<canvas class="glslCanvas" data-fragment-url="SHADER" data-textures="texture.png" style="position: fixed; top: 0; width: 100%; height: 100vh"></canvas>
+<canvas data-fullscreen="1" class="glslCanvas" data-fragment-url="SHADER" data-textures="texture.png"></canvas>
+<h1>TITLE <a href="SHADER">Code</a></h1>
 </body>
 </html>
 EOF
@@ -46,12 +35,7 @@ cat > index.html <<EOF
     <title>TITLE</title>
     <link rel="icon" type="image/x-icon" href="texture.png">
     <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
-    <style>
-        :root {
-          background-color: #010101;
-          color: #aae;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <ul>
