@@ -32,12 +32,13 @@ cat > index.html <<EOF
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITLE</title>
+    <title>Shader Exercises</title>
     <link rel="icon" type="image/x-icon" href="texture.png">
     <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<h1>Shaders Exercices</h1>
 <ul>
 EOF
 
